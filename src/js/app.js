@@ -13,6 +13,9 @@ module.exports = {
 	saveGroup: function(groupName, key, val) {
 		simpleStorage.set(key + groupName, val);
 	},
+	setGroup: function(groupName, key, val) {
+		this.set(key + groupName, val);
+	},
 	getGroup: function(groupName, key, defaultVal) {
 		return this.get(key + groupName, defaultVal);
 	},
