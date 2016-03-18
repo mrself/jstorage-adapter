@@ -3,6 +3,9 @@ module.exports = {
 	save: function(key, val, options) {
 		simpleStorage.set(key, val, options);
 	},
+	set: function() {
+		this.save.apply(this, arguments);
+	},
 	get: function(key, defaultVal) {
 		return simpleStorage.get(key, defaultVal);
 	},
