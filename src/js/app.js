@@ -24,5 +24,8 @@ module.exports = {
 	},
 	size: function() {
 		return simpleStorage.storageSize();
+	},
+	instnce: function() {
+		return simplestorage;
 	}
 };
