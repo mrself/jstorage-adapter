@@ -1,0 +1,1 @@
+window._storage = require('../src/js/app.js');

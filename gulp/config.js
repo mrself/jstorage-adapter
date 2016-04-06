@@ -8,6 +8,10 @@ module.exports = {
 			entries: src + 'js/app.js',
 			dest: build + 'js',
 			outputName: 'app.min.js'
+		}, {
+			entries: 'tests/app.js',
+			dest: build + 'js',
+			outputName: 'app-test.js'
 		}]
 	},
 	css: {

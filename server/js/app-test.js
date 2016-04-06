@@ -33,4 +33,6 @@ module.exports = {
 		return simplestorage;
 	}
 };
-},{"simplestorage.js":1}]},{},[2]);
+},{"simplestorage.js":1}],3:[function(require,module,exports){
+window._storage = require('../src/js/app.js');
+},{"../src/js/app.js":2}]},{},[3]);
