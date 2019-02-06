@@ -18,6 +18,10 @@ describe('#set', function() {
 });
 
 describe('#setGroup', function() {
+	it('should save values', function() {
+		_storage.setGroup('q', 'key', 1);
+		assert(_storage.getGroup('q', 'key') === 1);
+	});
 	it ('TTL option should work', function(done) {
 		_storage.setGroup('q', 'key', 1, {TTL: 300});
 		setTimeout(function() {
@@ -32,3 +36,7 @@ it('#flush', function() {
 	_storage.flush();
 	assert(_storage.get('k') == undefined);
 });
+
+function l(x) {
+	console.log(x);
+}
